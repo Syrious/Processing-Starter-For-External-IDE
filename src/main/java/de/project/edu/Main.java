@@ -2,24 +2,31 @@ package main.java.de.project.edu;
 
 import processing.core.PApplet;
 
-public class Main extends PApplet {
-    public static Main main;
+import static main.java.de.project.edu.Provider.pApplet;
 
+public class Main {
+    private Ball ball;
     public static void main(String... args) {
-        PApplet.main(Main.class);
+        new Main();
+        PApplet.main(Provider.class);
     }
 
+    public Main() {
+        Provider.setMain(this);
+    }
 
     public void settings() {
-        size(640, 360);
+        pApplet.size(640, 360);
     }
 
     public void setup() {
-        background(255);
+        pApplet.background(255);
+        ball = new Ball();
     }
 
-
     public void draw() {
-        circle(5f, 5f, 10f);
+        pApplet.circle(5f,5f,20f);
+
+        ball.draw();
     }
 }
