@@ -1,5 +1,4 @@
 # Introduction
-
 This module serves as a very simple starter with example for using an external IDE (IntelliJ IDEA in particular) with  
 [Processing](https://processing.org/).
 
@@ -8,7 +7,6 @@ project provides a static class which itself provides the PApplet object `pApple
 directly accessed in your classes.
 
 # Setup
-
 1. Clone or download the project
 2. Open the project in your IDE
 3. Install the processing libs
@@ -17,7 +15,7 @@ directly accessed in your classes.
    * NetBeans: TBD
 
 # Usage
-
 * Create a class with a method you want to use for drawing
 * Import ProcessingStarter. I'd advise to use static import e.g. `import static main.java.ProcessingStarter.p;`
 * Using `p.` you can call all the Processing methods e.g. `p.frameRate` which returns the current frame rate.
+* Start your project by running the main-Method in ProcessingStarter.java

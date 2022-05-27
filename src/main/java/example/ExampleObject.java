@@ -29,7 +29,6 @@ public class ExampleObject implements Drawable {
     public void draw() {
         x += speed * Time.deltaTime;
 
-
         p.fill(15, 0, 200);
         p.circle(x, y, extent);
     }
