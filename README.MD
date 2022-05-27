@@ -12,9 +12,9 @@ directly accessed in your classes.
 1. Clone or download the project
 2. Open the project in your IDE
 3. Install the processing libs
-    * [IntelliJ](https://stackoverflow.com/a/36770937)
-    * Eclipse: TBD
-    * NetBeans: TBD
+   * [IntelliJ](https://linuxtut.com/en/49b803b3217e642cfbd1/)
+   * [Eclipse](https://happycoding.io/tutorials/java/processing-in-java)
+   * NetBeans: TBD
 
 # Usage
 
