@@ -5,5 +5,5 @@ package main.java.interfaces;
  * make sense if you need to iterate over a list of all objects that implement the draw-method
  */
 public interface Drawable {
-    public void draw();
+    void draw();
 }

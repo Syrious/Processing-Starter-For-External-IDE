@@ -1,4 +1,4 @@
-package main.java.example;
+package main.java.example.withimport;
 
 import main.java.interfaces.Drawable;
 
@@ -12,10 +12,10 @@ import static main.java.ProcessingStarter.p;
  * Example code. Creates multiple objects which implements {@link Drawable} which then
  * get drawn inside {@link #drawSomething()}
  */
-public class Example {
+public class ExampleWithImport {
     private final List<Drawable> drawables;
 
-    public Example() {
+    public ExampleWithImport() {
         drawables = new ArrayList<>();
         Random random = new Random();
 
@@ -24,7 +24,7 @@ public class Example {
             float y = random.nextInt(p.height);
             float extent = random.nextInt(100);
 
-            drawables.add(new ExampleObject(x, y, extent));
+            drawables.add(new ExampleObjectWithImport(x, y, extent));
         }
 
     }

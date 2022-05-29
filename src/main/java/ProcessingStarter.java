@@ -24,6 +24,7 @@ public class ProcessingStarter extends PApplet {
      */
     public static PApplet p;
 
+
     /**
      * The Processing object on which all processing calls are sent. Consider using the shorthand
      * {@link ProcessingStarter#p}.

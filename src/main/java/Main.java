@@ -1,6 +1,7 @@
 package main.java;
 
-import main.java.example.Example;
+import main.java.example.withimport.ExampleWithImport;
+import main.java.example.withwrapper.ExampleWithWrapper;
 
 import static main.java.ProcessingStarter.p;
 
@@ -9,7 +10,8 @@ import static main.java.ProcessingStarter.p;
  */
 public class Main {
     // *** Example-Code ***
-    private Example example;
+    private ExampleWithImport exampleWithImport;
+    private ExampleWithWrapper exampleWithWrapper;
     // ********************
 
     public void settings() {
@@ -21,7 +23,8 @@ public class Main {
         p.frameRate(60);
 
         // *** Example-Code ***
-        example = new Example();
+        exampleWithImport = new ExampleWithImport();
+        exampleWithWrapper = new ExampleWithWrapper();
         // ********************
     }
 
@@ -29,7 +32,8 @@ public class Main {
         p.background(255);
 
         // *** Example-Code ***
-        example.drawSomething();
+        exampleWithImport.drawSomething();
+        exampleWithWrapper.drawSomething();
         // ********************
     }
 }

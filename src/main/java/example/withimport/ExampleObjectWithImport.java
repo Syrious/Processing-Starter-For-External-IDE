@@ -1,4 +1,4 @@
-package main.java.example;
+package main.java.example.withimport;
 
 import main.java.ProcessingHelper.Time;
 import main.java.interfaces.Drawable;
@@ -10,14 +10,14 @@ import static main.java.ProcessingStarter.p;
 /**
  * Example object which implements the {@link Drawable} interface
  */
-public class ExampleObject implements Drawable {
+public class ExampleObjectWithImport implements Drawable {
 
     private float x;
     private final float y;
     private final float extent;
     private final float speed;
 
-    public ExampleObject(float x, float y, float extent) {
+    public ExampleObjectWithImport(float x, float y, float extent) {
         this.x = x;
         this.y = y;
         this.extent = extent;
@@ -29,6 +29,7 @@ public class ExampleObject implements Drawable {
     public void draw() {
         x += speed * Time.deltaTime;
 
+        p.noStroke();
         p.fill(15, 0, 200);
         p.circle(x, y, extent);
     }
