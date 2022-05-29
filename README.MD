@@ -4,7 +4,7 @@ This module serves as a very simple starter with example for using an external I
 [Processing](https://processing.org/).
 
 Its main goal is to avoid injecting an PApplet object via the constructor in each class you want to draw. Instead, this
-project provides two approaches circumvent this pproblem:
+project provides two approaches circumvent this problem:
 
 1. By using the `ProcessingStarter` class which itself provides the PApplet object `pApplet` or short `p` which then can
    be directly accessed in your classes.
